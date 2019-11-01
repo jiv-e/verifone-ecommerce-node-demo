@@ -9,4 +9,4 @@ To get access to the test server you need to ask from Verifone to whitelist your
 3. Go to http://localhost:3000
 
 # Dependencies
-Node.js - tested with v10.15.3
+Node.js - tested with v10.15.3.

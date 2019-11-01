@@ -50,15 +50,6 @@ server.listen(port, hostname, () => {
   console.log(`Server running at ${shopUrl}/`)
 })
 
-function parseRequestData(data) {
-  return new Map(data.toString()
-    .split('&')
-    .map(item => item.split('=')
-      .map(item => decodeURIComponent(item).replace('+', ' '))
-    )
-  )
-}
-
 function renderOrder(req) {
   const sign = crypto.createSign('SHA1')
   const hash = crypto.createHash('SHA256')
